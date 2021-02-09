@@ -295,8 +295,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoRoadColor: {fileID: 2100000, guid: a5064a827410a0241af7e505ac3a28c0, type: 2}
   StopRoadColor: {fileID: 2100000, guid: be48a03ef1007bc4884492b7f1aeba96, type: 2}
+  SlowRoadColor: {fileID: 2100000, guid: 22e6a895574e972478497dfd5672f89b, type: 2}
   Road: {fileID: 86029941}
-  colorTimer: 20
+  colorTimer: 25
   roadColorBool: 0
 --- !u!1 &139866764
 GameObject:
@@ -406,8 +407,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoRoadColor: {fileID: 2100000, guid: a5064a827410a0241af7e505ac3a28c0, type: 2}
   StopRoadColor: {fileID: 2100000, guid: be48a03ef1007bc4884492b7f1aeba96, type: 2}
+  SlowRoadColor: {fileID: 2100000, guid: 22e6a895574e972478497dfd5672f89b, type: 2}
   Road: {fileID: 139866766}
-  colorTimer: 20
+  colorTimer: 25
   roadColorBool: 0
 --- !u!1 &168212395
 GameObject:
@@ -1669,8 +1671,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoRoadColor: {fileID: 2100000, guid: a5064a827410a0241af7e505ac3a28c0, type: 2}
   StopRoadColor: {fileID: 2100000, guid: be48a03ef1007bc4884492b7f1aeba96, type: 2}
+  SlowRoadColor: {fileID: 2100000, guid: 22e6a895574e972478497dfd5672f89b, type: 2}
   Road: {fileID: 519672091}
-  colorTimer: 20
+  colorTimer: 25
   roadColorBool: 0
 --- !u!1 &543720640
 GameObject:
@@ -2470,8 +2473,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoRoadColor: {fileID: 2100000, guid: a5064a827410a0241af7e505ac3a28c0, type: 2}
   StopRoadColor: {fileID: 2100000, guid: be48a03ef1007bc4884492b7f1aeba96, type: 2}
+  SlowRoadColor: {fileID: 2100000, guid: 22e6a895574e972478497dfd5672f89b, type: 2}
   Road: {fileID: 1293920399}
-  colorTimer: 20
+  colorTimer: 25
   roadColorBool: 0
 --- !u!1 &1454700413
 GameObject:

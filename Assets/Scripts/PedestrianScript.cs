@@ -10,6 +10,9 @@ public class PedestrianScript : MonoBehaviour
     public bool fast;
     public bool stopped;
     public float canWalk = 0;
+    public static float currentSpeed;
+    public static bool roadRedBool = false;
+    public static bool roadYellowBool = false;
 
     void FixedUpdate()
     {
@@ -18,22 +21,33 @@ public class PedestrianScript : MonoBehaviour
 
         // set speed
         GetComponent<Rigidbody>().velocity = direction.normalized * speed * Time.deltaTime;
-
-        if (!fast)
+        if (roadRedBool)
         {
-            if (RestartScene.gameTimer >= 45f)
+            SetSpeed(0f);
+        } else if (roadYellowBool) {
+            SetSpeed(currentSpeed * 1.5f);
+        } else
+        {
+            if (!fast)
             {
-                SetSpeed(80);
-            }
-            else if (RestartScene.gameTimer <= 45f && RestartScene.gameTimer >= 25f)
-            {
-                SetSpeed(100);
-            }
-            else if (RestartScene.gameTimer <= 25f)
-            {
-                SetSpeed(120);
+                if (RestartScene.gameTimer >= 45f)
+                {
+                    SetSpeed(80);
+                    currentSpeed = 80;
+                }
+                else if (RestartScene.gameTimer <= 45f && RestartScene.gameTimer >= 25f)
+                {
+                    SetSpeed(100);
+                    currentSpeed = 100;
+                }
+                else if (RestartScene.gameTimer <= 25f)
+                {
+                    SetSpeed(120);
+                    currentSpeed = 120;
+                }
             }
         }
+
 
 
     }
@@ -58,7 +72,7 @@ public class PedestrianScript : MonoBehaviour
         }
         else
         {
-            SetSpeed(70f);
+            SetSpeed(currentSpeed);
         }
     }
 
