@@ -22,7 +22,7 @@ public class PedestrianSpawner : MonoBehaviour
         } else
         {
             int whichObject = 0;
-            float randomTime = Random.Range(8f, 15f);
+            float randomTime = Random.Range(5f, 10f);
 
             if (whichObject == 0)
             {

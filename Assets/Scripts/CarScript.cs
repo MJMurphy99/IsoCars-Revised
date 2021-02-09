@@ -17,6 +17,38 @@ public class CarScript : MonoBehaviour
 
         // set speed
         GetComponent<Rigidbody>().velocity = direction.normalized * speed * Time.deltaTime;
+
+        if (PedestrianScript.roadRedBool)
+        {
+            if (fast)
+            {
+                SetSpeed(400f);
+            }
+            else
+            {
+                SetSpeed(300f);
+            }
+        } else if (PedestrianScript.roadYellowBool)
+        {
+            if (fast)
+            {
+                SetSpeed(500f);
+            }
+            else
+            {
+                SetSpeed(300f);
+            }
+        } else
+        {
+            if (fast)
+            {
+                SetSpeed(300f);
+            }
+            else
+            {
+                SetSpeed(150f);
+            }
+        }
     }
 
     public void SetSpeed(float newSpeed)
@@ -33,14 +65,38 @@ public class CarScript : MonoBehaviour
     {
         Debug.Log("Car Click!");
         fast = !fast;
-        if (fast)
+        if (PedestrianScript.roadRedBool)
         {
-            SetSpeed(300f);
-        }
-        else
+            if (fast)
+            {
+                SetSpeed(400f);
+            }
+            else
+            {
+                SetSpeed(200f);
+            }
+        } else if (PedestrianScript.roadYellowBool)
         {
-            SetSpeed(150f);
+            if (fast)
+            {
+                SetSpeed(500f);
+            }
+            else
+            {
+                SetSpeed(300f);
+            }
+        } else
+        {
+            if (fast)
+            {
+                SetSpeed(300f);
+            }
+            else
+            {
+                SetSpeed(150f);
+            }
         }
+
     }
 
     void OnBecameInvisible()
