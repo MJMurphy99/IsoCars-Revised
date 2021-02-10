@@ -71,7 +71,7 @@ public class PickupScript : MonoBehaviour
         {
             Destroy(gameObject);
             ScoreKeeper.numPickupsInt++;
-            RestartScene.gameTimer = RestartScene.gameTimer + 10.0f;
+            //RestartScene.gameTimer = RestartScene.gameTimer + 10.0f;
             Debug.Log("pickup working with ped");
         }
 

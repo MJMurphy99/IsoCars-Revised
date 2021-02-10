@@ -27,7 +27,7 @@ public class RestartScene : MonoBehaviour
             ScoreKeeper.numCardsInt = 0;
             ScoreKeeper.numPedsInt = 0;
             ScoreKeeper.numPickupsInt = 0;
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
     }
 

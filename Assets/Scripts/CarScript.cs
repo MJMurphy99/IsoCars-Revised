@@ -22,31 +22,31 @@ public class CarScript : MonoBehaviour
         {
             if (fast)
             {
-                SetSpeed(400f);
+                SetSpeed(600f);
             }
             else
             {
-                SetSpeed(300f);
+                SetSpeed(400f);
             }
         } else if (PedestrianScript.roadYellowBool)
         {
             if (fast)
             {
-                SetSpeed(500f);
+                SetSpeed(700f);
             }
             else
             {
-                SetSpeed(300f);
+                SetSpeed(400f);
             }
         } else
         {
             if (fast)
             {
-                SetSpeed(300f);
+                SetSpeed(400f);
             }
             else
             {
-                SetSpeed(150f);
+                SetSpeed(250f);
             }
         }
     }
@@ -65,38 +65,6 @@ public class CarScript : MonoBehaviour
     {
         Debug.Log("Car Click!");
         fast = !fast;
-        if (PedestrianScript.roadRedBool)
-        {
-            if (fast)
-            {
-                SetSpeed(400f);
-            }
-            else
-            {
-                SetSpeed(200f);
-            }
-        } else if (PedestrianScript.roadYellowBool)
-        {
-            if (fast)
-            {
-                SetSpeed(500f);
-            }
-            else
-            {
-                SetSpeed(300f);
-            }
-        } else
-        {
-            if (fast)
-            {
-                SetSpeed(300f);
-            }
-            else
-            {
-                SetSpeed(150f);
-            }
-        }
-
     }
 
     void OnBecameInvisible()
@@ -128,7 +96,7 @@ public class CarScript : MonoBehaviour
         if (collision.gameObject.tag == "pedestrianPrefab")
         {
             Destroy(collision.gameObject);
-            ScoreKeeper.playerScoreNum = 0;
+            ScoreKeeper.playerScoreNum = ScoreKeeper.playerScoreNum - 5;
         }
     }
 }

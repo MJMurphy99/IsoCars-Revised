@@ -15,16 +15,9 @@ public class PedestrianSpawner : MonoBehaviour
 
     void CreateNewObject()
     {
-        if (PedestrianScript.roadRedBool)
-        {
-            //do not spawn anything
-            Debug.Log("doing nothing as expected boss");
-        } else
-        {
-            int whichObject = 0;
-            float randomTime = Random.Range(5f, 10f);
+            float randomTime = Random.Range(5f, 6f);
 
-            if (whichObject == 0)
+            if (PedestrianScript.roadRedBool == false)
             {
                 GameObject newPedestrian = (GameObject)Instantiate(pedestrianPrefab);
                 newPedestrian.transform.position = transform.position;
@@ -32,18 +25,18 @@ public class PedestrianSpawner : MonoBehaviour
             }
             if (RestartScene.gameTimer >= 45f)
             {
-                randomTime = Random.Range(8f, 15f);
+                randomTime = Random.Range(4f, 5f);
             }
             else if (RestartScene.gameTimer <= 45f && RestartScene.gameTimer >= 25f)
             {
-                randomTime = Random.Range(5f, 8f);
+                randomTime = Random.Range(3f, 4f);
             }
             else if (RestartScene.gameTimer <= 25f)
             {
-                randomTime = Random.Range(2f, 5f);
+                randomTime = Random.Range(2f, 3f);
             }
 
             Invoke("CreateNewObject", randomTime);
-        }
+        
     }
 }

@@ -15,17 +15,17 @@ public class CrossWalkChange : MonoBehaviour
     void Update()
     {
         colorTimer -= Time.deltaTime;
-        if (colorTimer <= 10 && colorTimer >= 0)
+        if (colorTimer <= 5 && colorTimer >= 0)
         {
             PedestrianScript.roadRedBool = true;
             PedestrianScript.roadYellowBool = false;
             Road.material = StopRoadColor;
-        } else if (colorTimer > 15)
+        } else if (colorTimer > 10)
         {
             PedestrianScript.roadRedBool = false;
             PedestrianScript.roadYellowBool = false;
             Road.material = GoRoadColor;
-        } else if (colorTimer <= 15 && colorTimer > 10)
+        } else if (colorTimer <= 10 && colorTimer > 5)
         {
             PedestrianScript.roadRedBool = false;
             PedestrianScript.roadYellowBool = true;

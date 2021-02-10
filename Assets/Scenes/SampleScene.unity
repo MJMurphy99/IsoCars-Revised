@@ -298,7 +298,6 @@ MonoBehaviour:
   SlowRoadColor: {fileID: 2100000, guid: 22e6a895574e972478497dfd5672f89b, type: 2}
   Road: {fileID: 86029941}
   colorTimer: 25
-  roadColorBool: 0
 --- !u!1 &139866764
 GameObject:
   m_ObjectHideFlags: 0
@@ -410,7 +409,6 @@ MonoBehaviour:
   SlowRoadColor: {fileID: 2100000, guid: 22e6a895574e972478497dfd5672f89b, type: 2}
   Road: {fileID: 139866766}
   colorTimer: 25
-  roadColorBool: 0
 --- !u!1 &168212395
 GameObject:
   m_ObjectHideFlags: 0
@@ -1674,7 +1672,6 @@ MonoBehaviour:
   SlowRoadColor: {fileID: 2100000, guid: 22e6a895574e972478497dfd5672f89b, type: 2}
   Road: {fileID: 519672091}
   colorTimer: 25
-  roadColorBool: 0
 --- !u!1 &543720640
 GameObject:
   m_ObjectHideFlags: 0
@@ -2476,7 +2473,6 @@ MonoBehaviour:
   SlowRoadColor: {fileID: 2100000, guid: 22e6a895574e972478497dfd5672f89b, type: 2}
   Road: {fileID: 1293920399}
   colorTimer: 25
-  roadColorBool: 0
 --- !u!1 &1454700413
 GameObject:
   m_ObjectHideFlags: 0
@@ -2825,7 +2821,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 68ebab40ae560cb429278ce7f8adb06c, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 0.1
   m_Pitch: 1
   Loop: 0

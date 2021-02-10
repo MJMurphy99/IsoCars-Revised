@@ -32,18 +32,18 @@ public class PedestrianScript : MonoBehaviour
             {
                 if (RestartScene.gameTimer >= 45f)
                 {
-                    SetSpeed(80);
-                    currentSpeed = 80;
-                }
-                else if (RestartScene.gameTimer <= 45f && RestartScene.gameTimer >= 25f)
-                {
                     SetSpeed(100);
                     currentSpeed = 100;
                 }
-                else if (RestartScene.gameTimer <= 25f)
+                else if (RestartScene.gameTimer <= 45f && RestartScene.gameTimer >= 25f)
                 {
                     SetSpeed(120);
                     currentSpeed = 120;
+                }
+                else if (RestartScene.gameTimer <= 25f)
+                {
+                    SetSpeed(140);
+                    currentSpeed = 140;
                 }
             }
         }
