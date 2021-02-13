@@ -1317,7 +1317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd0304c4b9d4943cb8b320855df5cdfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  carPrefab: {fileID: 3790781582782763625, guid: 21d292c25b796cc4a9cff4ed9d9a59cd,
+  carPrefab: {fileID: 7758741744722212976, guid: 2adb177aba811af4f9d4bc5f91473500,
     type: 3}
   pickupPrefab: {fileID: 7603989725555814266, guid: 679f6a04c0185d848b2dc58c72e9a8f5,
     type: 3}
@@ -2043,7 +2043,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd0304c4b9d4943cb8b320855df5cdfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  carPrefab: {fileID: 3790781582782763625, guid: 21d292c25b796cc4a9cff4ed9d9a59cd,
+  carPrefab: {fileID: 7758741744722212976, guid: 2adb177aba811af4f9d4bc5f91473500,
     type: 3}
   pickupPrefab: {fileID: 7603989725555814266, guid: 679f6a04c0185d848b2dc58c72e9a8f5,
     type: 3}
