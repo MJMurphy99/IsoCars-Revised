@@ -38,4 +38,9 @@ public class EndGameSceneUIController : MonoBehaviour
         SceneManager.LoadScene(2);
 
     }
+
+    public void linkFunc()
+    {
+        Application.OpenURL("https://floptop1999.wixsite.com/website");
+    }
 }
