@@ -10,12 +10,12 @@ public class PedestrianSpawner : MonoBehaviour
 
     void Start()
     {
-        CreateNewObject();
+        Invoke("CreateNewObject", 6.9f);
     }
 
     void CreateNewObject()
     {
-            float randomTime = Random.Range(5f, 6f);
+            float randomTime = Random.Range(5f, 10f);
 
             if (PedestrianScript.roadRedBool == false)
             {
@@ -25,15 +25,15 @@ public class PedestrianSpawner : MonoBehaviour
             }
             if (RestartScene.gameTimer >= 45f)
             {
-                randomTime = Random.Range(4f, 5f);
+                randomTime = Random.Range(4f, 9f);
             }
             else if (RestartScene.gameTimer <= 45f && RestartScene.gameTimer >= 25f)
             {
-                randomTime = Random.Range(3f, 4f);
+                randomTime = Random.Range(3f, 8f);
             }
             else if (RestartScene.gameTimer <= 25f)
             {
-                randomTime = Random.Range(2f, 3f);
+                randomTime = Random.Range(2f, 7f);
             }
 
             Invoke("CreateNewObject", randomTime);

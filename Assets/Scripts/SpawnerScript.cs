@@ -14,9 +14,9 @@ public class SpawnerScript : MonoBehaviour
     void CreateNewObject()
     {
         int whichObject = Random.Range(0, 10);
-        float randomTime = Random.Range(4f, 6f);
+        float randomTime = Random.Range(5f, 8f);
 
-        if (whichObject <= 7)
+        if (whichObject <= 8)
         {
             GameObject newCar = (GameObject)Instantiate(carPrefab);
             newCar.transform.position = transform.position;
@@ -30,15 +30,15 @@ public class SpawnerScript : MonoBehaviour
 
         if (RestartScene.gameTimer >= 45f)
         {
-            randomTime = Random.Range(4f, 6f);
+            randomTime = Random.Range(5f, 8f);
         }
         else if (RestartScene.gameTimer <= 45f && RestartScene.gameTimer >= 25f)
         {
-            randomTime = Random.Range(3f, 4f);
+            randomTime = Random.Range(4f, 7f);
         }
         else if (RestartScene.gameTimer <= 25f)
         {
-            randomTime = Random.Range(2.5f, 3f);
+            randomTime = Random.Range(3f, 6f);
         }
 
 

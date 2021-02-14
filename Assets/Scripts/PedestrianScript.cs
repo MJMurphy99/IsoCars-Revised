@@ -85,6 +85,7 @@ public class PedestrianScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "carPrefab")
         {
+            playerDeathManagerScript.playerDied = true;
             Destroy(collision.gameObject);
             Debug.Log("dead car");
         }

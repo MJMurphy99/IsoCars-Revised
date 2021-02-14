@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 4236631397427570548}
   - component: {fileID: 6741664118592301458}
   - component: {fileID: 6741664118592301459}
-  - component: {fileID: 6741664118592301452}
+  - component: {fileID: 8982681260277060243}
+  - component: {fileID: 3458654884806687417}
   m_Layer: 0
   m_Name: CoinPrefab
   m_TagString: pickupPrefab
@@ -94,7 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ed482ed9de0f054ab4c7a2f17eb52bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 150
+  speed: 200
   direction: {x: 0, y: 0, z: -1}
   fast: 0
   stopped: 0
@@ -114,8 +115,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &6741664118592301452
-BoxCollider:
+--- !u!114 &8982681260277060243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6741664118592301457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c281926d57d4574a81bda08ab14277b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &3458654884806687417
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -125,5 +138,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.5, y: 2.5, z: 0.3}
+  m_Radius: 1.5
   m_Center: {x: 0.049999952, y: 1.25, z: 0.05}

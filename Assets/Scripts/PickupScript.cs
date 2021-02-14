@@ -8,6 +8,12 @@ public class PickupScript : MonoBehaviour
     public Vector3 direction;
     public bool fast;
     public bool stopped;
+    
+
+    void Start()
+    {
+        
+    }
 
     void FixedUpdate()
     {
@@ -60,6 +66,7 @@ public class PickupScript : MonoBehaviour
             Destroy(gameObject);
             ScoreKeeper.playerScoreNum = ScoreKeeper.playerScoreNum + 2;
             ScoreKeeper.numPickupsInt++;
+            AudioManagerScript.coinPickedUp = true;
             if (ScoreKeeper.playerScoreNum > ScoreKeeper.playerHighScoreNum)
             {
                 ScoreKeeper.playerHighScoreNum = ScoreKeeper.playerHighScoreNum +2;
@@ -70,9 +77,12 @@ public class PickupScript : MonoBehaviour
         if (collision.gameObject.tag == "pedestrianPrefab")
         {
             Destroy(gameObject);
+            Destroy(collision.gameObject);
             ScoreKeeper.numPickupsInt++;
+            AudioManagerScript.coinPickedUp = true;
             //RestartScene.gameTimer = RestartScene.gameTimer + 10.0f;
             Debug.Log("pickup working with ped");
+            
         }
 
         if (collision.gameObject.tag == "pickupPrefab")
