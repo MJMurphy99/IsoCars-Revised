@@ -8,12 +8,6 @@ public class PickupScript : MonoBehaviour
     public Vector3 direction;
     public bool fast;
     public bool stopped;
-    
-
-    void Start()
-    {
-        
-    }
 
     void FixedUpdate()
     {
@@ -40,11 +34,11 @@ public class PickupScript : MonoBehaviour
         fast = !fast;
         if (fast)
         {
-            SetSpeed(200f);
+            SetSpeed(300f);
         }
         else
         {
-            SetSpeed(200f);
+            SetSpeed(300f);
         }
     }
 

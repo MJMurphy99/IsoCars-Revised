@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PedestrianSpawner : MonoBehaviour
 {
@@ -10,7 +11,14 @@ public class PedestrianSpawner : MonoBehaviour
 
     void Start()
     {
-        Invoke("CreateNewObject", 6.9f);
+        if(SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            CreateNewObject();
+        }else
+        {
+            Invoke("CreateNewObject", 6.9f);
+        }
+        
     }
 
     void CreateNewObject()

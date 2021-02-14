@@ -13,42 +13,83 @@ public class CarScript : MonoBehaviour
     void FixedUpdate()
     {
         // face direction
-        transform.rotation = Quaternion.LookRotation(direction);
+        if (this.name == "MikeTruck1Prefab(Clone)" || this.name == "MikeTruck2Prefab(Clone)" || this.name == "MikeTruck3Prefab(Clone)")
+        {
+            transform.rotation = Quaternion.LookRotation(-direction);
+            if (PedestrianScript.roadRedBool)
+            {
+                if (fast)
+                {
+                    SetSpeed(500f);
+                }
+                else
+                {
+                    SetSpeed(300f);
+                }
+            }
+            else if (PedestrianScript.roadYellowBool)
+            {
+                if (fast)
+                {
+                    SetSpeed(600f);
+                }
+                else
+                {
+                    SetSpeed(350f);
+                }
+            }
+            else
+            {
+                if (fast)
+                {
+                    SetSpeed(300f);
+                }
+                else
+                {
+                    SetSpeed(200f);
+                }
+            }
+        }
+        else
+        {
+            transform.rotation = Quaternion.LookRotation(direction);
+            if (PedestrianScript.roadRedBool)
+            {
+                if (fast)
+                {
+                    SetSpeed(600f);
+                }
+                else
+                {
+                    SetSpeed(400f);
+                }
+            } else if (PedestrianScript.roadYellowBool)
+            {
+                if (fast)
+                {
+                    SetSpeed(700f);
+                }
+                else
+                {
+                    SetSpeed(400f);
+                }
+            } else
+            {
+                if (fast)
+                {
+                    SetSpeed(400f);
+                }
+                else
+                {
+                    SetSpeed(250f);
+                }
+            }
+        }
 
         // set speed
         GetComponent<Rigidbody>().velocity = direction.normalized * speed * Time.deltaTime;
 
-        if (PedestrianScript.roadRedBool)
-        {
-            if (fast)
-            {
-                SetSpeed(600f);
-            }
-            else
-            {
-                SetSpeed(400f);
-            }
-        } else if (PedestrianScript.roadYellowBool)
-        {
-            if (fast)
-            {
-                SetSpeed(700f);
-            }
-            else
-            {
-                SetSpeed(400f);
-            }
-        } else
-        {
-            if (fast)
-            {
-                SetSpeed(400f);
-            }
-            else
-            {
-                SetSpeed(250f);
-            }
-        }
+
     }
 
     public void SetSpeed(float newSpeed)
@@ -88,6 +129,7 @@ public class CarScript : MonoBehaviour
 
         if (collision.gameObject.tag == "carPrefab")
         {
+            CarsCollidingAudio.carCrashed = true;
             Destroy(collision.gameObject);
             ScoreKeeper.playerScoreNum--;
             Debug.Log("dead car");

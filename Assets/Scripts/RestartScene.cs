@@ -23,11 +23,11 @@ public class RestartScene : MonoBehaviour
 
         if (gameTimer <= 0)
         {
-            ScoreKeeper.playerScoreNum = 0;
+            SceneManager.LoadScene(3);
             ScoreKeeper.numCardsInt = 0;
             ScoreKeeper.numPedsInt = 0;
             ScoreKeeper.numPickupsInt = 0;
-            SceneManager.LoadScene(1);
+            
         }
     }
 

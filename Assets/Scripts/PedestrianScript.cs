@@ -25,7 +25,10 @@ public class PedestrianScript : MonoBehaviour
         {
             SetSpeed(0f);
         } else if (roadYellowBool) {
-            SetSpeed(currentSpeed * 1.5f);
+            if (!fast)
+            {
+                SetSpeed(currentSpeed * 1.5f);
+            }
         } else
         {
             if (!fast)
@@ -66,14 +69,21 @@ public class PedestrianScript : MonoBehaviour
     {
         Debug.Log("Walker Click!");
         fast = !fast;
-        if (fast)
+        if (PedestrianScript.roadRedBool)
         {
-            SetSpeed(0f);
-        }
-        else
+            //don't let the player click
+        } else
         {
-            SetSpeed(currentSpeed);
+            if (fast)
+            {
+                SetSpeed(0f);
+            }
+            else
+            {
+                SetSpeed(currentSpeed);
+            }
         }
+
     }
 
     void OnBecameInvisible()
@@ -103,6 +113,7 @@ public class PedestrianScript : MonoBehaviour
 
         if (collision.gameObject.tag == "pedestrianPrefab")
         {
+            playerDeathManagerScript.playerDied = true;
             Destroy(gameObject);
         }
     }

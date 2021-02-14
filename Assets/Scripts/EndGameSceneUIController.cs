@@ -22,7 +22,20 @@ public class EndGameSceneUIController : MonoBehaviour
 
     public void LoadMainGameOnButtonPress()
     {
+        SceneManager.LoadScene(1);
+        ScoreKeeper.playerScoreNum = 0;
+
+    }
+
+    public void LoadMainMenuOnButtonPress()
+    {
         SceneManager.LoadScene(0);
+
+    }
+
+    public void LoadInstructionsOnButtonPress()
+    {
+        SceneManager.LoadScene(2);
 
     }
 }

@@ -517,7 +517,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1440218b0eddced42ad9920ab849b5d8, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.1
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1275,7 +1275,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1440218b0eddced42ad9920ab849b5d8, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.1
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1611,7 +1611,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1440218b0eddced42ad9920ab849b5d8, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.1
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1743,9 +1743,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd0304c4b9d4943cb8b320855df5cdfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  carPrefab: {fileID: 7758741744722212976, guid: 2adb177aba811af4f9d4bc5f91473500,
+  carPrefab1: {fileID: 7758741744722212976, guid: 2adb177aba811af4f9d4bc5f91473500,
     type: 3}
   pickupPrefab: {fileID: 6741664118592301457, guid: 1374c0e7ed0525942ac26cd7a02fee2f,
+    type: 3}
+  carPrefab2: {fileID: 7550362387186075236, guid: 5212dedb576e98345a71c62ad7277a5d,
+    type: 3}
+  carPrefab3: {fileID: 1361962170725982669, guid: 2f1fcf1cc648bbf429e2c94175919461,
+    type: 3}
+  truckPrefab1: {fileID: 971686790596243318, guid: 3aae0bae582b7bf418727615280ef911,
+    type: 3}
+  truckPrefab2: {fileID: 7532941277163933009, guid: 451b0347f64877e49aefb969841f9129,
+    type: 3}
+  truckPrefab3: {fileID: 7249992812995627668, guid: 8b53442ba0e362f42be94d1314ba3d00,
     type: 3}
 --- !u!23 &396062251
 MeshRenderer:
@@ -2866,9 +2876,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd0304c4b9d4943cb8b320855df5cdfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  carPrefab: {fileID: 7758741744722212976, guid: 2adb177aba811af4f9d4bc5f91473500,
+  carPrefab1: {fileID: 7758741744722212976, guid: 2adb177aba811af4f9d4bc5f91473500,
     type: 3}
   pickupPrefab: {fileID: 6741664118592301457, guid: 1374c0e7ed0525942ac26cd7a02fee2f,
+    type: 3}
+  carPrefab2: {fileID: 7550362387186075236, guid: 5212dedb576e98345a71c62ad7277a5d,
+    type: 3}
+  carPrefab3: {fileID: 1361962170725982669, guid: 2f1fcf1cc648bbf429e2c94175919461,
+    type: 3}
+  truckPrefab1: {fileID: 971686790596243318, guid: 3aae0bae582b7bf418727615280ef911,
+    type: 3}
+  truckPrefab2: {fileID: 7532941277163933009, guid: 451b0347f64877e49aefb969841f9129,
+    type: 3}
+  truckPrefab3: {fileID: 7249992812995627668, guid: 8b53442ba0e362f42be94d1314ba3d00,
     type: 3}
 --- !u!23 &959884155
 MeshRenderer:
@@ -3971,7 +3991,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1440218b0eddced42ad9920ab849b5d8, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.1
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4101,7 +4121,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 68ebab40ae560cb429278ce7f8adb06c, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4358,6 +4378,148 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1961242222
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1961242224}
+  - component: {fileID: 1961242223}
+  - component: {fileID: 1961242225}
+  m_Layer: 0
+  m_Name: CarsCollidingAudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1961242223
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961242222}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 75944b28430c0924c907db8e8bbece72, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.05
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1961242224
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961242222}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 360, y: 270, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1961242225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961242222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e1ffafb63513b14f855d9673ccbd6ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carCrash: {fileID: 8300000, guid: 75944b28430c0924c907db8e8bbece72, type: 3}
+  audioSource: {fileID: 1961242223}
 --- !u!1 &2022044552
 GameObject:
   m_ObjectHideFlags: 0
