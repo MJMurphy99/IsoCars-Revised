@@ -439,8 +439,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 2.5994549, z: 1}
+  m_Center: {x: 0, y: 0.79972744, z: 0}
 --- !u!23 &168212397
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -812,7 +812,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e6fc4c4910005f4ea6dab5f8b6da0e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pedestrianPrefab: {fileID: 1954349999550911241, guid: 9c17fe5c5d8bf614cb28c6490df41cfb,
+  pedestrianPrefab: {fileID: 338101743405667018, guid: a9a894aab385fc94fa4f86ef5806932c,
     type: 3}
   safeCrossTimer: 0
   spawnable: 0
@@ -908,7 +908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e6fc4c4910005f4ea6dab5f8b6da0e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pedestrianPrefab: {fileID: 1954349999550911241, guid: 9c17fe5c5d8bf614cb28c6490df41cfb,
+  pedestrianPrefab: {fileID: 338101743405667018, guid: a9a894aab385fc94fa4f86ef5806932c,
     type: 3}
   safeCrossTimer: 0
   spawnable: 0
@@ -1017,8 +1017,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 2.341608, z: 1}
+  m_Center: {x: 0, y: 0.670804, z: 0}
 --- !u!23 &285034485
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1237,8 +1237,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 2.1521301, z: 1}
+  m_Center: {x: 0, y: 0.57606506, z: 0}
 --- !u!23 &389944346
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1319,7 +1319,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   carPrefab: {fileID: 7758741744722212976, guid: 2adb177aba811af4f9d4bc5f91473500,
     type: 3}
-  pickupPrefab: {fileID: 7603989725555814266, guid: 679f6a04c0185d848b2dc58c72e9a8f5,
+  pickupPrefab: {fileID: 6741664118592301457, guid: 1374c0e7ed0525942ac26cd7a02fee2f,
     type: 3}
 --- !u!23 &396062251
 MeshRenderer:
@@ -1855,7 +1855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e6fc4c4910005f4ea6dab5f8b6da0e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pedestrianPrefab: {fileID: 1954349999550911241, guid: 9c17fe5c5d8bf614cb28c6490df41cfb,
+  pedestrianPrefab: {fileID: 338101743405667018, guid: a9a894aab385fc94fa4f86ef5806932c,
     type: 3}
   safeCrossTimer: 0
   spawnable: 0
@@ -2045,7 +2045,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   carPrefab: {fileID: 7758741744722212976, guid: 2adb177aba811af4f9d4bc5f91473500,
     type: 3}
-  pickupPrefab: {fileID: 7603989725555814266, guid: 679f6a04c0185d848b2dc58c72e9a8f5,
+  pickupPrefab: {fileID: 6741664118592301457, guid: 1374c0e7ed0525942ac26cd7a02fee2f,
     type: 3}
 --- !u!23 &959884155
 MeshRenderer:
@@ -2542,7 +2542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e6fc4c4910005f4ea6dab5f8b6da0e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pedestrianPrefab: {fileID: 1954349999550911241, guid: 9c17fe5c5d8bf614cb28c6490df41cfb,
+  pedestrianPrefab: {fileID: 338101743405667018, guid: a9a894aab385fc94fa4f86ef5806932c,
     type: 3}
   safeCrossTimer: 0
   spawnable: 0
@@ -2744,8 +2744,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 2.5729294, z: 1}
+  m_Center: {x: 0, y: 0.7864647, z: 0}
 --- !u!23 &1679096956
 MeshRenderer:
   m_ObjectHideFlags: 0
